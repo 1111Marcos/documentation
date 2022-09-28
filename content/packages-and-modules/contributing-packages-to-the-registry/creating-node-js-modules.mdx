@@ -29,9 +29,11 @@ For more information on `package.json` files, see "[Creating a package.json file
 In the file, add a function as a property of the `exports` object. This will make the function available to other code:
 
 ```
-exports.printMsg = function() {
+function printMsg() {
   console.log("This is a message from the demo package");
 }
+
+module.exports = printMsg;
 ```
 
 ## Test your module
